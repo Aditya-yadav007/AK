@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<title>Windows 11 trying</title>
+				<!--<link rel="stylesheet" href="Windows 11.css"/> -->
+				<style>
+								*{
+												margin: 0;
+												padding: 0;
+								}
+								body{
+												background-image: url("/storage/emulated/0/Download/img19.jpg");
+												background-size: cover;
+												overflow: hidden;
+												height: 100vh;
+												width: 100%;
+								}
+								.taskbar{
+												width: 100%;
+												position: absolute;
+												bottom: 0;
+												display: flex;
+												z-index: 110;
+												justify-content: center;
+												background-color: ;
+								}
+								.startmenu{
+												position: absolute;
+												/* bottom: 50px;*/
+												bottom: -650px;
+												width: 100%;
+												text-align: center;
+												transition: all 0.7s  ease-in;
+								}
+								.startmenu img{
+												border-radius: 8px;
+								}
+								.right{
+												justify-self: flex-end;
+												position: absolute;
+												right: 0;
+												margin: 8px 0;
+												height: 80%;
+								}
+				</style>
+</head>
+<body>
+  <div class="taskbar">
+    <img class="" src="/storage/emulated/0/Download/Windows-11-Taskbar-size~3.png" alt="" />
+    <img class="right"src="/storage/emulated/0/Download/1627190252_taskbar_windows11-1200x800~3.jpg" alt="" />
+  </div>
+  <div class="startmenu">
+  				<img src="/storage/emulated/0/Download/Windows-11-offc-1~2.jpg" alt="">
+  </div>
+  <!-- <video src=" height="" width="" preload="none" autoplay="autoplay muted>
+    <source src="/storage/emulated/0/Download/Windows 11 Bloom animation.mp4>type="video/" media="" />
+  </video> -->
+</body>
+<script>
+				let taskbar = document.getElementsByClassName("taskbar")[0]
+				let startmenu = document.getElementsByClassName("startmenu")[0]
+				
+				taskbar.addEventListener("click",()=>{
+				console.log("clicked");
+				if(startmenu.style.bottom == "50px"){
+								startmenu.style.bottom = "-650px"
+				}
+    else{
+    				startmenu.style.bottom = "50px"
+    }
+})
+</script>
+</html>
